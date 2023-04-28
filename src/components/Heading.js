@@ -3,7 +3,6 @@ import Card from 'react-bootstrap/Card'
 import Image from 'react-bootstrap/Image'
 import Container from 'react-bootstrap/Container'
 import Form from 'react-bootstrap/Form';
-import FloatingLabel from 'react-bootstrap/FloatingLabel';
 
 function Heading() {
   return (
@@ -14,12 +13,7 @@ function Heading() {
                     <Container>
                         <Card.Title className="text-start fs-1 col-8">Order groceries for delivery or pickup today</Card.Title>
                         <Card.Text className="text-start">Whatever you want from local stores, brought right to your door.</Card.Text>
-                        <FloatingLabel
-                                controlId="floatingInput"
-                                label="Enter your address"
-                        >
-                            <Form.Control type="email" />
-                        </FloatingLabel>
+                        <Form.Control type="text" placeholder='Enter your address...' />
                     </Container>
                 </div>
                 <div className='col-4 text-end'>
